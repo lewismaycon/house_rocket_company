@@ -92,9 +92,13 @@
 
 ## 6.0 Principais Insights
 ##### 6.1 Os imóveis com vista para água são cerca de 212% mais caros, na média.
+![](/img/6.1.png)
 ##### 6.2 A avaliação dos imóveis construídos nas últimas três décadas encontra-se em média cerca de 19% acima da avaliação dos imóveis construídos entre 1900 e 1959, enquanto que há um crescimento médio de 4,7% por década entre as décadas de 1940 e 1990.
+![](/img/6.2.png)
 ##### 6.3 Para os imóveis construídos após a década de 1960, a condição diminui em média cerca de 4% por década.
+![](/img/6.3.png)
 ##### 6.4 Para imóveis que possuem entre 1 e 8 quartos, o preço aumenta em média cerca de 20% conforme aumenta-se a quantidade de quartos.
+![](/img/6.4.png)
 
 ## 7.0 Resultados Financeiros
 #### 7.1 Geral:
