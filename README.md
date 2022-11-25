@@ -1,5 +1,5 @@
 # House Rocket Company
-###### [Visualizar projeto](https://house-rocket-company-data.herokuapp.com/)
+###### [Visualizar projeto](https://lewismaycon-house-rocket-company-house-rocket-pf-ciaqmv.streamlit.app/)
 
 ## 1.0 Contexto do Negócio
 ##### A House Rocket Company¹ é uma empresa do setor imobiliário que atua principalmente na compra e venda de imóveis, lucrando com a valorização de tais aquisições entre esses períodos.
