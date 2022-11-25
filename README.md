@@ -1,5 +1,5 @@
 # House Rocket Company
-###### [Visualizar projeto](https://lewismaycon-house-rocket-company-house-rocket-pf-ciaqmv.streamlit.app/)
+###### [Visualizar projeto](https://lewismaycon-house-rocket-company-house-rocket-pf-tgejra.streamlit.app/)
 
 ## 1.0 Contexto do Negócio
 ##### A House Rocket Company¹ é uma empresa do setor imobiliário que atua principalmente na compra e venda de imóveis, lucrando com a valorização de tais aquisições entre esses períodos.
@@ -55,9 +55,8 @@
 - Python 3.0
 - Jupyter Notebook
 - Pycharm
-- Streamlit
 - Git e Github
-- Heroku
+- Streamlit Cloud
 - Estatística descritiva
 #### 5.3 Processo
 ##### Aqui estão as formas escolhidas para responder as duas questões solicitadas.
