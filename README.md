@@ -65,10 +65,12 @@
 ##### Para definir que um imóvel está em um bom preço para ser comprado, é necessário ter um preço base para que esse seja comparado. O cálculo escolhido para obter tal valor foi a mediana pois esta, diferente da média, não é afetada por possíveis outliers. Logo, havia uma ponto central onde os preço poderiam ser classificados acima ou abaixo da mesma.
 ##### Entretanto, há diversos fatores que podem afetar os preços dos imóveis como a presença ou ausência de porão ou a região onde estão localizados, por exemplo. Dessa forma, técnicas de estatística descritiva e alguma bibliotecas no Python - pandas, numpy, ploty, seaborn, sweetviz e matplotlib - foram utilizadas para definir possíveis filtros que formassem melhor agora não mais uma, mas diversas medianas.
 ##### Isto posto, as colunas escolhidas como filtros foram “grade”, “zipcode” e “waterfront”, ou seja, as medianas dos preço foram formadas conforme a região do imóvel, a sua nota de avaliação e o fato de ter ou não vista para água. Em seguida, foram criados quatro possíveis classificações para cada imóvel, sendo estas baseadas também nas condições do mesmo, como visto a seguir:
+|    STATUS    |                           DESCRIÇÃO                          |
+|:------------:|:------------------------------------------------------------:|
 | 1 compra A   | O preço está abaixo da mediana e a condição é 5              |
 | 2 compra B   | O preço está abaixo da mediana e a condição é 4              |
 | 3 neutro     | O preço está abaixo da mediana e a condição é 3              |
-| 4 nao compra | O preço está acima da mediana ou a condição está abaixo de 3 |
+| 4 não compra | O preço está acima da mediana ou a condição está abaixo de 3 |
 ##### A classificação “3 neutro” indica que, embora esteja em um bom preço, o imóvel pode necessitar de uma reforma, assim, caberá a equipe de negócios avaliar se esses casos compensariam para a empresa.
 ##### Por fim, para representar ainda melhor o potencial de retorno de cada imóvel, foi criada uma coluna “upside” que representa a diferença entre o preço e a mediana, medido em porcentagem. Ou seja, se um imóvel possui 20% de upside, por exemplo, isto significa que seu preço está 20% descolado da mediana, neste caso, para baixo - percentuais negativos significam que está deslocado para cima. Segue um exemplo de como está representada a tabela de compras no dashboard:
 |     id     |    data    |  preco | regiao | classificacao | vista_agua | condicao | preco_mediano |   status   | upside |
@@ -103,6 +105,8 @@
 | compra B | 15,58% | 77234,78 |    2562    |
 #### 7.2 Primeira situação:
 ##### Caso sejam comprados os 100 imóveis com os maiores upsides da classe “compra A”.
+|    DESCRIÇÃO   |       VALOR      |
+|:--------------:|:----------------:|
 | total comprado | R$ 42.406.468,00 |
 | total vendido  | R$ 59.602.194,61 |
 | lucro total    | R$ 17.195.726,61 |
@@ -110,6 +114,8 @@
 | upside médio   |      29,26%      |
 #### 7.3 Segunda situação:
 ##### Caso sejam comprados os 100 imóveis com os maiores upsides da classe “compra B”.
+|    DESCRIÇÃO   |       VALOR      |
+|:--------------:|:----------------:|
 | total comprado | R$ 27.914.065,00 |
 | total vendido  | R$ 48.822.994,28 |
 | lucro total    | R$ 20.908.929,28 |
@@ -117,16 +123,18 @@
 | upside médio   |      43,19%      |
 #### 7.4 Terceira situação:
 ##### Caso sejam comprados os 100 imóveis com os maiores upsides independente da classe.
+|    DESCRIÇÃO   |       VALOR      |
+|:--------------:|:----------------:|
 | total comprado | R$ 28.044.880,00 |
-|----------------|-----------------:|
 | total vendido  | R$ 49.588.267,98 |
 | lucro total    | R$ 21.543.387,98 |
 | lucro médio    |    R$ 215.433,87 |
 | upside médio   |      43,89%      |
 #### 7.5 Quarta situação:
 ##### Caso sejam comprados os 50 imóveis com os maiores upsides da classe “compra A” e os 50 com os maiores upsides da classe “compra B”.
+|    DESCRIÇÃO   |       VALOR      |
+|:--------------:|:----------------:|
 | total comprado | R$ 30.448.798,00 |
-|----------------|-----------------:|
 | total vendido  | R$ 51.000.491,98 |
 | lucro total    | R$ 20.551.693,98 |
 | lucro médio    |    R$ 205.516,93 |
