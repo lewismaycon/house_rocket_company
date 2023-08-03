@@ -1,4 +1,9 @@
 # House Rocket Company
+
+<p align="center">
+  <img src="/img/capa.jpg" width="50%" height="50%">
+</p>
+
 ###### [Visualizar projeto](https://lewismaycon-house-rocket-company-house-rocket-pf-tgejra.streamlit.app/)
 
 ## 1.0 Contexto do Negócio
@@ -64,7 +69,7 @@ A base de dados utilizada no projeto foi retirada do site da [Kaggle](https://ww
 Neste ponto, considera-se as respostas para as perguntas feitas e a forma de entregá-las como o produto final, o material criado pelo time de dados para o time de negócio. Assim sendo, o modelo entregável escolhido foi um dashboard com as visualizações necessárias - disponível no link logo ao início deste documento.
 
 **5.2 Ferramentas**
-- Python 3.0
+- Python  
 - Jupyter Notebook
 - Pycharm
 - Git e Github
@@ -77,11 +82,11 @@ Aqui estão as formas escolhidas para responder as duas questões solicitadas.
 
 **5.3.1** Quais são os imóveis que a House Rocket deveria comprar e por qual preço?
 
-Para definir que um imóvel está em um bom preço para ser comprado, é necessário ter um preço base para que esse seja comparado. O cálculo escolhido para obter tal valor foi a mediana pois esta, diferente da média, não é afetada por possíveis outliers. Logo, havia uma ponto central onde os preço poderiam ser classificados acima ou abaixo da mesma.
+Para definir que um imóvel está em um bom preço para ser comprado, é necessário ter um preço base para que esse seja comparado, um ponto central onde os preço podem ser classificados acima ou abaixo deste. O cálculo escolhido para obter tal valor foi a mediana pois esta, diferente da média, não é afetada por possíveis outliers.
 
-Entretanto, há diversos fatores que podem afetar os preços dos imóveis como a presença ou ausência de porão ou a região onde estão localizados, por exemplo. Dessa forma, técnicas de estatística descritiva e alguma bibliotecas no Python - pandas, numpy, ploty, seaborn, sweetviz e matplotlib - foram utilizadas para definir possíveis filtros que formassem melhor agora não mais uma, mas diversas medianas.
+Entretanto, há diversos fatores que podem afetar os preços dos imóveis como a presença ou ausência de porão ou a região onde estão localizados, por exemplo. Dessa forma, técnicas de estatística descritiva e algumas bibliotecas no Python - pandas, numpy, ploty, seaborn, sweetviz e matplotlib - foram utilizadas para definir possíveis filtros que formassem melhor agora não mais uma, mas diversas medianas.
 
-Isto posto, as colunas escolhidas como filtros foram “grade”, “zipcode” e “waterfront”, ou seja, as medianas dos preço foram formadas conforme a região do imóvel, a sua nota de avaliação e o fato de ter ou não vista para água. Em seguida, foram criados quatro possíveis classificações para cada imóvel, sendo estas baseadas também nas condições do mesmo, como visto a seguir:
+Isto posto, as colunas escolhidas como filtros foram “grade”, “zipcode” e “waterfront”, ou seja, as medianas dos preços foram formadas conforme a região do imóvel, a sua nota de avaliação e o fato de ter ou não vista para água. Em seguida, foram criados quatro possíveis classificações para cada imóvel, sendo estas baseadas também nas condições do mesmo, como visto a seguir:
 |    STATUS    |                           DESCRIÇÃO                          |
 |:------------:|:------------------------------------------------------------:|
 | 1 compra A   | O preço está abaixo da mediana e a condição é 5              |
@@ -98,7 +103,7 @@ Por fim, para representar ainda melhor o potencial de retorno de cada imóvel, f
 
 **5.3.2** Uma vez comprados os imóveis, qual o melhor momento para vendê-los e por qual preço?
 
-O primeiro passo tomado para definir os preços e o momento de venda foi calcular qual seria a melhor temporada de vendas. Assim, as datas foram agrupadas nas quatros estações do ano conforme o clima dos EUA e foi concluído que a estação mais apropriada é a primavera. Diante disso, também foram calculados os potenciais de valorização para os imóveis dependendo do período em que foi comprado e considerando que este seria vendido na próxima primavera.
+O primeiro passo tomado para definir os preços e o momento de venda foi calcular qual seria a melhor temporada de vendas. Assim, as datas foram agrupadas nas quatros estações do ano conforme o clima dos EUA e foi concluído que a estação mais apropriada é a primavera. Diante disso, também foram calculados os potenciais de valorização para os imóveis dependendo do período em que foi comprado e considerando que este seria vendido na próxima primavera - como não temos registros de dados de uma primavera à outra, tal upside não foi considerado.
 | TEMPORADA DA COMPRA | TAXA ESPERADA |
 |:-------------------:|:-------------:|
 |       Inverno       |     6,50%     |
